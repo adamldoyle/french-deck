@@ -1,0 +1,7 @@
+{
+  "name": "french-deck-examples-texas-holdem",
+  "version": "0.0.0",
+  "dependencies": {
+    "french-deck": "latest"
+  }
+}

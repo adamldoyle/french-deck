@@ -1,0 +1,30 @@
+{
+    "name": "french-deck",
+    "version": "0.1.0",
+    "description": "Implementation of a standard deck of 52 cards with optional jokers.",
+    "author": { "name": "Adam Doyle", "email": "adamldoyle@gmail.com", "url": "http://adamldoyle.com/" },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/adamldoyle/french-deck.git"
+    },
+    "bugs": {
+        "url": "http://github.com/adamldoyle/french-deck/issues"
+    },
+    "main": "./lib/french-deck",
+    "dependencies": {
+        "pkginfo": "latest",
+        "util": "latest"
+    },
+    "devDependencies": {
+        "vows": "latest"
+    },
+    "scripts": {
+        "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
+    },
+    "engines": { "node": ">= 0.6.0" },
+    "licenses": [ {
+        "type": "MIT",
+        "url": "http://www.opensource.org/licenses/MIT"
+    } ],
+    "keywords": ["french", "deck", "cards"]
+}

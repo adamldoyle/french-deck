@@ -1,0 +1,8 @@
+*.md
+.git*
+Makefile
+docs/
+examples/
+support/
+test/
+.idea/
