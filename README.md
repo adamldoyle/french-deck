@@ -23,7 +23,7 @@ Construct a deck (or more than one deck) which will keep track of dealt and unde
 
 ## Examples
 
-For a complete, working example, refer to the [texas hold'em example](https://github.com/adamldoyle/french-deck/tree/master/examples/texas hold'em).
+For a complete, working example, refer to the [texas hold'em example](https://github.com/adamldoyle/french-deck/tree/master/examples/texas%20hold'em).
 
 ## Tests
 
