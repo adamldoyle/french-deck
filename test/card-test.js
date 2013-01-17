@@ -9,7 +9,7 @@ vows.describe('Card').addBatch({
 
   'when constructing a Card': {
     topic: function() {
-      return new Card('club', 2);
+      return new Card('club', '2');
     },
 
     'then suit is correct': function(topic) {
@@ -17,7 +17,7 @@ vows.describe('Card').addBatch({
     },
 
     'then rank is correct': function(topic) {
-      assert.equal(2, topic.rank);
+      assert.equal('2', topic.rank);
     }
   },
 
@@ -38,7 +38,7 @@ vows.describe('Card').addBatch({
 
   'when constructing a Card with an invalid suit': {
     topic: function() {
-      return new Card('fake', 2);
+      return new Card('fake', '2');
     },
 
     'then an InvalidCardError is thrown': function(e) {
@@ -48,7 +48,7 @@ vows.describe('Card').addBatch({
 
   'when constructing a Card with an invalid rank': {
     topic: function() {
-      return new Card('club', 11);
+      return new Card('club', '11');
     },
 
     'then an InvalidCardError is thrown': function(e) {
@@ -84,7 +84,7 @@ vows.describe('Card').addBatch({
 
     'then the standard ranks are returned': function(ranks) {
       for (var i = 2; i < 11; i++) {
-        assert.notEqual(ranks.indexOf(i), -1);
+        assert.notEqual(ranks.indexOf(i.toString()), -1);
       }
       assert.notEqual(ranks.indexOf('jack'), -1);
       assert.notEqual(ranks.indexOf('queen'), -1);
@@ -95,7 +95,7 @@ vows.describe('Card').addBatch({
 
   'when getting the string representation of a card': {
     topic: function() {
-      var card = new Card('club', 2);
+      var card = new Card('club', '2');
       return card.toString();
     },
 
