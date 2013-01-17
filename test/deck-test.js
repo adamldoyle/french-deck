@@ -29,8 +29,8 @@ vows.describe('Deck()').addBatch({
 
     'then there is one unshuffled deck with one of each card': function(topic) {
       var i = 0;
-      ['heart', 'diamond', 'spade', 'club'].forEach(function(suit) {
-        [2, 3, 4, 5, 6, 7, 8, 9, 10, 'jack', 'queen', 'king', 'ace'].forEach(function(rank) {
+      Card.suits.forEach(function(suit) {
+        Card.ranks.forEach(function(rank) {
           var card = topic._undealt[i++];
           assert.equal(card.suit, suit);
           assert.equal(card.rank, rank);
@@ -74,8 +74,8 @@ vows.describe('Deck()').addBatch({
     'then there is an unshuffled deck with two of each card': function(topic) {
       var i = 0;
       for (var i = 0; i < 2; i++) {
-        ['heart', 'diamond', 'spade', 'club'].forEach(function(suit) {
-          [2, 3, 4, 5, 6, 7, 8, 9, 10, 'jack', 'queen', 'king', 'ace'].forEach(function(rank) {
+        Card.suits.forEach(function(suit) {
+          Card.ranks.forEach(function(rank) {
             var card = topic._undealt[i++];
             assert.equal(card.suit, suit);
             assert.equal(card.rank, rank);

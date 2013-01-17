@@ -24,6 +24,10 @@ vows.describe('french-deck').addBatch({
 
     'should export EmptyDeckError': function (x) {
       assert.isFunction(deck.EmptyDeckError);
+    },
+
+    'should export InvalidCardError': function (x) {
+      assert.isFunction(deck.InvalidCardError);
     }
   }
 
